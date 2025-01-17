@@ -1,34 +1,3 @@
-.condition-card {
-  display: flex; /* Enable Flexbox for alignment */
-  flex-direction: column; 
-  align-items: start;/* Stack children vertically */
-}
-
-.condition-card .header {
-  display: flex; /* Inline elements in a row */
-  align-items: center;
-  font-size: 0.5rem; /* Vertically align items */
-}
-
-.condition-card img {
-  width: 25px;
-  margin-right: 15px; /* Space between icon and heading */
-}
-
-.condition-card h3 {
-  color: #9399a2ff;
-  font-size: 1.2rem;
-  margin: 0; /* Remove default margins */
-}
-
-.condition-card p {
-  font-size: 2rem;
-  color: rgb(210, 216, 224);
-  font-weight: 500;
-  margin: 10px 0  0 40px; /* Add spacing from the header */
-}
-
-
 /* 
 
 .condition-container .condition-card:nth-child(1),
@@ -48,3 +17,39 @@
   margin-right: 100px;
   justify-self: right; 
 } */
+.condition-card {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+}
+.condition-card .header {
+  display: flex;
+  align-items: center;
+  font-size: 0.5rem;
+}
+.condition-card img {
+  width: 25px;
+  margin-right: 15px;
+}
+.condition-card h3 {
+  color: #9399a2;
+  font-size: 1.2rem;
+  margin: 0;
+}
+.condition-card p {
+  font-size: 2rem;
+  color: rgb(210, 216, 224);
+  font-weight: 500;
+  margin: 10px 0 0 40px;
+}
+
+@media (max-width: 768px) {
+  .condition-card h3 {
+    font-size: 0.8rem;
+  }
+  .condition-card p {
+    font-size: 1.2rem;
+  }
+}
+
+/*# sourceMappingURL=condition-card.css.map */
